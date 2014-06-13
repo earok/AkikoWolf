@@ -1,0 +1,15 @@
+Short:        Source code of Amiga port of Wolfenstein 3D v0.7
+Author:       Id Software/Mariusz Naumowicz (Amiga port)
+Uploader:     mariusz.naumowicz@put.poznan.pl (Mariusz Naumowicz)
+Type:         game/shoot
+Version:      0.7
+Architecture: m68k-amigaos >= 3.0.0
+
+This archive contains the SAS/C Amiga source code of AWolf3D-0.7. You
+don't need it to play AWolf, only if you want to try and compile it or
+look at how it works.
+
+The archive contains a few files that are not used.
+
+AWolf3D is based on PSP port and ADoom v1.4
+

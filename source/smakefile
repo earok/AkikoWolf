@@ -1,0 +1,73 @@
+CC=sc
+
+PHXASS=c:phxass
+
+DBUG=NODEBUG OPTIMIZE OPTTIME OPTLOOP OPTALIAS OPTDEP=200 OPTPEEP OPTGO OPTCOMP=200 OPTSCHEDULE OPTINL OPTINLOCAL NOSTACKCHECK
+
+PDBUG=
+
+PFLAGS=NOEXE MACHINE=68020 OPT=3 I=include: $(PDBUG)
+
+CFLAGS= $(DBUG) CPU=68020 NOICONS STRINGMERGE ABSFUNCPOINTER DATA=FAR \
+        VERBOSE \
+        PARM=REG DEFINE=__BIG_ENDIAN__ DEFINE=NORMALUNIX IGNORE=79 \
+        DEFINE=strcasecmp=stricmp DEFINE=strncasecmp=strnicmp DEFINE=AMIGA \
+        DEFINE=AMIPX DEFINE=GRAFITI MATH=IEEE
+LDFLAGS=LINK NOICONS
+LIBS=
+
+OBJS= \
+        ff_psp.o \
+        id_ca.o \
+        id_us.o \
+        id_vh.o \
+        misc.o \
+        objs.o \
+        sd_comm.o \
+        sd_null.o \
+        vi_comm.o \
+        vi_sdl.o \
+        wl_act1.o \
+        wl_act2.o \
+        wl_act3.o \
+        wl_agent.o \
+        wl_debug.o \
+        wl_draw.o \
+        wl_game.o \
+        wl_inter.o \
+        wl_main.o \
+        wl_menu.o \
+        wl_play.o \
+        wl_state.o \
+        wl_text.o \
+        fixed.o \
+        draw.o \
+        fastFill.o
+         
+all:    AWolf3D
+
+        
+clean:
+        delete $(OBJS)
+
+
+
+AWolf3D : $(OBJS)
+        $(CC) < with <
+        $(CFLAGS) $(LDFLAGS) $(OBJS) \
+        PROGRAMNAME AWolf3D $(LIBS)
+<
+
+
+draw.o: draw.s smakefile
+        $(PHXASS) $(PFLAGS) draw.s  
+
+fixed.o: fixed.s
+        $(PHXASS) $(PFLAGS) fixed.s 
+        
+fastFill.o: fastFill.s
+        $(PHXASS) $(PFLAGS) fastFill.s
+        
+%.o:    %.c
+        $(CC) $(CFLAGS) $< -o $@
+            

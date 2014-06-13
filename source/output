@@ -1,0 +1,242 @@
+	sc NODEBUG OPTIMIZE OPTTIME OPTLOOP OPTALIAS OPTDEP=200 OPTPEEP OPTGO OPTCOMP=200 OPTSCHEDULE OPTINL OPTINLOCAL NOSTACKCHECK CPU=68020 NOICONS STRINGMERGE ABSFUNCPOINTER DATA=FAR          VERBOSE          PARM=REG DEFINE=__BIG_ENDIAN__ DEFINE=NORMALUNIX IGNORE=79          DEFINE=strcasecmp=stricmp DEFINE=strncasecmp=strnicmp DEFINE=AMIGA          DEFINE=AMIPX DEFINE=GRAFITI MATH=IEEE wl_agent.c
+No default scoptions file found
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+Compiler Phase 1 for "wl_agent.c"
+
+====================
+typedef long [33;7mlong[0m int64_t;
+include/id_heads.h 13 Warning 101: redundant keywords in declaration
+wl_agent.c 78 Warning 161: no prototype declared at definition for function "CheckWeaponChange"
+wl_agent.c 262 Warning 161: no prototype declared at definition for function "UpdateFace"
+
+====================
+	if (SD_SoundPlaying[33;7m([0m) == GETGATLINGSND)
+wl_agent.c 263 Warning 100: no prototype declared for function "SD_SoundPlaying"
+
+====================
+	if (facecount > US_RndT[33;7m([0m))
+wl_agent.c 267 Warning 100: no prototype declared for function "US_RndT"
+wl_agent.c 896 Warning 161: no prototype declared at definition for function "VictoryTile"
+wl_agent.c 965 Warning 161: no prototype declared at definition for function "Cmd_Fire"
+wl_agent.c 990 Warning 161: no prototype declared at definition for function "Cmd_Use"
+
+====================
+		SD_WaitSoundDone[33;7m([0m);
+wl_agent.c 1049 Warning 100: no prototype declared for function "SD_WaitSoundDone"
+wl_agent.c 1237 Warning 161: no prototype declared at definition for function "VictorySpin"
+No errors; 10 warnings; 3 user suppressed warnings
+Global Optimizer for "wl_agent.c"
+wl_agent.c 90 Note 306: complexity=4 function inlined: "DrawWeapon"
+wl_agent.c 90 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 523
+wl_agent.c 98 Note 306: complexity=4 function inlined: "DrawWeapon"
+wl_agent.c 98 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 523
+wl_agent.c 233 Note 306: complexity=2 function inlined: "StatusDrawPic"
+wl_agent.c 241 Note 306: complexity=2 function inlined: "StatusDrawPic"
+wl_agent.c 244 Note 306: complexity=2 function inlined: "StatusDrawPic"
+wl_agent.c 274 Note 306: complexity=8 function inlined: "DrawFace"
+wl_agent.c 274 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 233
+wl_agent.c 274 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 241
+wl_agent.c 274 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 244
+wl_agent.c 299 Note 306: complexity=2 function inlined: "StatusDrawPic"
+wl_agent.c 308 Note 306: complexity=2 function inlined: "StatusDrawPic"
+wl_agent.c 328 Note 306: complexity=12 function inlined: "LatchNumber"
+wl_agent.c 328 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 328 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 366 Note 306: complexity=4 function inlined: "DrawHealth"
+wl_agent.c 366 Note 306: complexity=12 function inlined: "LatchNumber" from line 328
+wl_agent.c 366 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 366 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 367 Note 306: complexity=8 function inlined: "DrawFace"
+wl_agent.c 367 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 233
+wl_agent.c 367 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 241
+wl_agent.c 367 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 244
+wl_agent.c 397 Note 306: complexity=4 function inlined: "DrawHealth"
+wl_agent.c 397 Note 306: complexity=12 function inlined: "LatchNumber" from line 328
+wl_agent.c 397 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 397 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 399 Note 306: complexity=8 function inlined: "DrawFace"
+wl_agent.c 399 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 233
+wl_agent.c 399 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 241
+wl_agent.c 399 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 244
+wl_agent.c 423 Note 306: complexity=12 function inlined: "LatchNumber"
+wl_agent.c 423 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 423 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 444 Note 306: complexity=12 function inlined: "LatchNumber"
+wl_agent.c 444 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 444 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 463 Note 306: complexity=4 function inlined: "DrawLives"
+wl_agent.c 463 Note 306: complexity=12 function inlined: "LatchNumber" from line 444
+wl_agent.c 463 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 463 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 483 Note 306: complexity=12 function inlined: "LatchNumber"
+wl_agent.c 483 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 483 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 503 Note 306: complexity=2 function inlined: "GiveExtraMan"
+wl_agent.c 503 Note 306: complexity=4 function inlined: "DrawLives" from line 463
+wl_agent.c 503 Note 306: complexity=12 function inlined: "LatchNumber" from line 444
+wl_agent.c 503 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 503 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 505 Note 306: complexity=4 function inlined: "DrawScore"
+wl_agent.c 505 Note 306: complexity=12 function inlined: "LatchNumber" from line 483
+wl_agent.c 505 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 505 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 523 Note 306: complexity=2 function inlined: "StatusDrawPic"
+wl_agent.c 543 Note 306: complexity=2 function inlined: "StatusDrawPic"
+wl_agent.c 545 Note 306: complexity=2 function inlined: "StatusDrawPic"
+wl_agent.c 548 Note 306: complexity=2 function inlined: "StatusDrawPic"
+wl_agent.c 550 Note 306: complexity=2 function inlined: "StatusDrawPic"
+wl_agent.c 572 Note 306: complexity=4 function inlined: "DrawWeapon"
+wl_agent.c 572 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 523
+wl_agent.c 590 Note 306: complexity=12 function inlined: "LatchNumber"
+wl_agent.c 590 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 590 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 611 Note 306: complexity=4 function inlined: "DrawWeapon"
+wl_agent.c 611 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 523
+wl_agent.c 618 Note 306: complexity=4 function inlined: "DrawAmmo"
+wl_agent.c 618 Note 306: complexity=12 function inlined: "LatchNumber" from line 590
+wl_agent.c 618 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 618 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 635 Note 306: complexity=7 function inlined: "DrawKeys"
+wl_agent.c 635 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 543
+wl_agent.c 635 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 545
+wl_agent.c 635 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 548
+wl_agent.c 635 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 550
+wl_agent.c 669 Note 306: complexity=1 function inlined: "GiveKey"
+wl_agent.c 669 Note 306: complexity=7 function inlined: "DrawKeys" from line 635
+wl_agent.c 669 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 543
+wl_agent.c 669 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 545
+wl_agent.c 669 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 548
+wl_agent.c 669 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 550
+wl_agent.c 727 Note 306: complexity=2 function inlined: "StatusDrawPic"
+wl_agent.c 736 Note 306: complexity=2 function inlined: "GiveExtraMan"
+wl_agent.c 736 Note 306: complexity=4 function inlined: "DrawLives" from line 463
+wl_agent.c 736 Note 306: complexity=12 function inlined: "LatchNumber" from line 444
+wl_agent.c 736 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 736 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 860 Note 306: complexity=20 function inlined: "TryMove"
+wl_agent.c 873 Note 306: complexity=20 function inlined: "TryMove"
+wl_agent.c 878 Note 306: complexity=20 function inlined: "TryMove"
+wl_agent.c 943 Note 306: complexity=1 function inlined: "VictoryTile"
+wl_agent.c 968 Warning 304: dead assignment eliminated "gamestate"
+wl_agent.c 1278 Note 306: complexity=4 function inlined: "UpdateFace"
+wl_agent.c 1278 Note 306: complexity=8 function inlined: "DrawFace" from line 274
+wl_agent.c 1278 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 233
+wl_agent.c 1278 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 241
+wl_agent.c 1278 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 244
+wl_agent.c 1282 Note 306: complexity=7 function inlined: "VictorySpin"
+wl_agent.c 1315 Note 306: complexity=4 function inlined: "DrawWeapon"
+wl_agent.c 1315 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 523
+wl_agent.c 1322 Note 306: complexity=4 function inlined: "DrawWeapon"
+wl_agent.c 1322 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 523
+wl_agent.c 1339 Note 306: complexity=21 function inlined: "GunAttack"
+wl_agent.c 1341 Note 306: complexity=4 function inlined: "DrawAmmo"
+wl_agent.c 1341 Note 306: complexity=12 function inlined: "LatchNumber" from line 590
+wl_agent.c 1341 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 299
+wl_agent.c 1341 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 308
+wl_agent.c 1345 Note 306: complexity=10 function inlined: "KnifeAttack"
+wl_agent.c 1374 Note 306: complexity=7 function inlined: "VictorySpin"
+wl_agent.c 1378 Note 306: complexity=4 function inlined: "UpdateFace"
+wl_agent.c 1378 Note 306: complexity=8 function inlined: "DrawFace" from line 274
+wl_agent.c 1378 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 233
+wl_agent.c 1378 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 241
+wl_agent.c 1378 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 244
+wl_agent.c 1379 Note 306: complexity=8 function inlined: "CheckWeaponChange"
+wl_agent.c 1379 Note 306: complexity=4 function inlined: "DrawWeapon" from line 90
+wl_agent.c 1379 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 523
+wl_agent.c 1379 Note 306: complexity=4 function inlined: "DrawWeapon" from line 98
+wl_agent.c 1379 Note 306: complexity=2 function inlined: "StatusDrawPic" from line 523
+wl_agent.c 1382 Note 306: complexity=20 function inlined: "Cmd_Use"
+wl_agent.c 1385 Note 306: complexity=3 function inlined: "Cmd_Fire"
+wl_agent.c 968 Warning 304: dead assignment eliminated "gamestate"
+Compiler Phase 2 for "wl_agent.c"
+Module size P=00002A2E D=00000000 U=00000000 C=00000000 F=000000BC UF=0000001C
+
+	sc  with temp_smk.tmp
+No default scoptions file found
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+slink WITH "AWolf3D.lnk"
+Slink - Version 6.58
+Copyright (c) 1988-1995 SAS Institute, Inc.  All Rights Reserved.
+
+[FPass1 for Object 'LIB:c.o'[K
+[FPass1 for Object 'ff_psp.o'[K
+[FPass1 for Object 'id_ca.o'[K
+[FPass1 for Object 'id_us.o'[K
+[FPass1 for Object 'id_vh.o'[K
+[FPass1 for Object 'misc.o'[K
+[FPass1 for Object 'objs.o'[K
+[FPass1 for Object 'sd_comm.o'[K
+[FPass1 for Object 'sd_null.o'[K
+[FPass1 for Object 'vi_comm.o'[K
+[FPass1 for Object 'vi_sdl.o'[K
+[FPass1 for Object 'wl_act1.o'[K
+[FPass1 for Object 'wl_act2.o'[K
+[FPass1 for Object 'wl_act3.o'[K
+[FPass1 for Object 'wl_agent.o'[K
+[FPass1 for Object 'wl_debug.o'[K
+[FPass1 for Object 'wl_draw.o'[K
+[FPass1 for Object 'wl_game.o'[K
+[FPass1 for Object 'wl_inter.o'[K
+[FPass1 for Object 'wl_main.o'[K
+[FPass1 for Object 'wl_menu.o'[K
+[FPass1 for Object 'wl_play.o'[K
+[FPass1 for Object 'wl_state.o'[K
+[FPass1 for Object 'wl_text.o'[K
+[FPass1 for Object 'fixed.o'[K
+[FPass1 for Object 'draw.o'[K
+[FPass1 for Object 'fastFill.o'[K
+[FPass1 for Library 'LIB:scmieee.lib'[K
+[FPass1 for Library 'LIB:scnb.lib'[K
+[FPass1 for Library 'LIB:amiga.lib'[K
+[FPass1 for Object 'T:XUZS.0001'[K
+[4mUndefined symbols       [0m [4mFirst Referenced[0m
+_strafe                  File 'wl_agent.o'
+Enter a DEFINE value for _strafe (default ___stub): [F
+Coalescing[K
+[FPass2 for Object 'LIB:c.o'[K
+[FPass2 for Object 'ff_psp.o'[K
+[FPass2 for Object 'id_ca.o'[K
+[FPass2 for Object 'id_us.o'[K
+[FPass2 for Object 'id_vh.o'[K
+[FPass2 for Object 'misc.o'[K
+[FPass2 for Object 'objs.o'[K
+[FPass2 for Object 'sd_comm.o'[K
+[FPass2 for Object 'sd_null.o'[K
+[FPass2 for Object 'vi_comm.o'[K
+[FPass2 for Object 'vi_sdl.o'[K
+[FPass2 for Object 'wl_act1.o'[K
+[FPass2 for Object 'wl_act2.o'[K
+[FPass2 for Object 'wl_act3.o'[K
+[FPass2 for Object 'wl_agent.o'[K
+[FPass2 for Object 'wl_debug.o'[K
+[FPass2 for Object 'wl_draw.o'[K
+[FPass2 for Object 'wl_game.o'[K
+[FPass2 for Object 'wl_inter.o'[K
+[FPass2 for Object 'wl_main.o'[K
+[FPass2 for Object 'wl_menu.o'[K
+[FPass2 for Object 'wl_play.o'[K
+[FPass2 for Object 'wl_state.o'[K
+[FPass2 for Object 'wl_text.o'[K
+[FPass2 for Object 'fixed.o'[K
+[FPass2 for Object 'draw.o'[K
+[FPass2 for Object 'fastFill.o'[K
+[FPass2 for Object 'T:XUZS.0001'[K
+[FPass2 for Library 'LIB:scmieee.lib'[K
+[FPass2 for Library 'LIB:scnb.lib'[K
+[FPass2 for Library 'LIB:amiga.lib'[K
+
+Parsing            0:00.00 ---   19754
+Pass1              0:30.08 --- 1396586
+Coalescing         0:00.00 --- 1101370
+Pass2              0:00.04 --- 1110146
+Map Processing     0:00.00 ---  190986
+======================================
+Total              0:30.12 --- 1396586
+
+SLINK Complete - Maximum code size = 275948 ($000435ec) bytes
+
+Final output file size = 195620 ($0002fc24) bytes

@@ -1,0 +1,7 @@
+FROM LIB:c.o "ff_psp.o"+"id_ca.o"+"id_us.o"+"id_vh.o"+"misc.o"+"objs.o"+"sd_comm.o"+"sd_null.o"+"vi_comm.o"+"vi_sdl.o"+"wl_act1.o"+"wl_act2.o"+"wl_act3.o"+"wl_agent.o"+"wl_debug.o"+"wl_draw.o"+"wl_game.o"+"wl_inter.o"+"wl_main.o"+"wl_menu.o"+"wl_play.o"+"wl_state.o"+"wl_text.o"+"fixed.o"+"draw.o"+"fastFill.o"
+TO "AWolf3D"
+LIB LIB:scmieee.lib
+    LIB:scnb.lib LIB:amiga.lib
+VERBOSE
+NOICONS
+
