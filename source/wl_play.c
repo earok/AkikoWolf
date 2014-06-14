@@ -1066,14 +1066,18 @@ void StartDamageFlash(int damage)
 
 void UpdatePaletteShifts()
 {
-	int red, white;
+	int red, white, counttics=1;
 
+	//Hacky fix to red clearing bug
+	if(tics>0)
+		counttics=tics;
+	
 	if (bonuscount)
 	{
 		white = bonuscount/WHITETICS +1;
 		if (white>NUMWHITESHIFTS)
 			white = NUMWHITESHIFTS;
-		bonuscount -= tics;
+		bonuscount -= counttics;
 		if (bonuscount < 0)
 			bonuscount = 0;
 	}
@@ -1087,7 +1091,7 @@ void UpdatePaletteShifts()
 		if (red>NUMREDSHIFTS)
 			red = NUMREDSHIFTS;
 
-		damagecount -= tics;
+		damagecount -= counttics;
 		if (damagecount < 0)
 			damagecount = 0;
 	}

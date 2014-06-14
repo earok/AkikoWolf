@@ -580,7 +580,7 @@ typedef struct objstruct
 	dirtype		dir;
 
 	fixed 		x,y;
-	unsigned	tilex,tiley;
+	int	tilex,tiley;
 	byte		areanumber;
 
 	int	 	viewx;

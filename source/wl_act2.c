@@ -706,7 +706,7 @@ void T_Shoot (objtype *ob)
 
 	dx = abs(ob->tilex - player->tilex);
 	dy = abs(ob->tiley - player->tiley);
-	dist = dx>dy ? dx:dy;
+	dist = dx>dy ? dx:dy; //ERIK TO FIX??
 
 	if (ob->obclass == ssobj || ob->obclass == bossobj)
 		dist = dist*2/3;					// ss are better shots
