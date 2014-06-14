@@ -1,0 +1,284 @@
+	sc NODEBUG OPTIMIZE OPTTIME OPTLOOP OPTALIAS OPTDEP=200 OPTPEEP OPTGO OPTCOMP=200 OPTSCHEDULE OPTINL OPTINLOCAL NOSTACKCHECK CPU=68020 NOICONS STRINGMERGE ABSFUNCPOINTER DATA=FAR          VERBOSE          PARM=REG DEFINE=__BIG_ENDIAN__ DEFINE=NORMALUNIX IGNORE=79          DEFINE=strcasecmp=stricmp DEFINE=strncasecmp=strnicmp DEFINE=AMIGA          DEFINE=AMIPX DEFINE=GRAFITI MATH=IEEE wl_draw.c
+No default scoptions file found
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+Compiler Phase 1 for "wl_draw.c"
+
+====================
+typedef long [33;7mlong[0m int64_t;
+include/id_heads.h 13 Warning 101: redundant keywords in declaration
+wl_draw.c 86 Warning 93: no reference to identifier "jj"
+wl_draw.c 311 Warning 161: no prototype declared at definition for function "DrawScaleds"
+wl_draw.c 435 Warning 161: no prototype declared at definition for function "DrawPlayerWeapon"
+
+====================
+		if ((player->state == s_deathcam) && (get_TimeCount[33;7m([0m) & 32))
+wl_draw.c 441 Warning 100: no prototype declared for function "get_TimeCount"
+wl_draw.c 466 Warning 161: no prototype declared at definition for function "WallRefresh"
+
+====================
+	AsmRefresh[33;7m([0m);
+wl_draw.c 474 Warning 100: no prototype declared for function "AsmRefresh"
+wl_draw.c 499 Warning 161: no prototype declared at definition for function "MapRow"
+wl_draw.c 570 Warning 161: no prototype declared at definition for function "SetPlaneViewSize"
+wl_draw.c 610 Warning 161: no prototype declared at definition for function "DrawPlanes"
+wl_draw.c 676 Warning 161: no prototype declared at definition for function "ClearScreen"
+
+====================
+clr=gfxbuf+yoffset320+(xoffset)[33;7m;[0m
+wl_draw.c 687 Warning 225: pointer type mismatch
+                           "unsigned long *" does not match "unsigned char *"
+
+====================
+typedef unsigned char UBYTE[33;7m;[0m
+wl_draw.c 728 Warning 224: item "UBYTE" already defined
+                           See line 47 file "include:exec/types.h"
+wl_draw.c 770 Warning 161: no prototype declared at definition for function "VW_UpdateScreen2"
+
+====================
+        WriteChunkyPixels[33;7m([0m&temprp2,0,0,WIDTH-1,HEIGHT-1,gfxbuf,WIDTH)
+wl_draw.c 784 Warning 100: no prototype declared for function "WriteChunkyPixels"
+
+====================
+        while (!ChangeScreenBuffer[33;7m([0mscreen,sb[toggle]))
+wl_draw.c 785 Warning 100: no prototype declared for function "ChangeScreenBuffer"
+
+====================
+        	WaitTOF[33;7m([0m);
+wl_draw.c 786 Warning 100: no prototype declared for function "WaitTOF"
+
+====================
+		tBitMap[33;7m([0m);
+wl_draw.c 787 Warning 100: no prototype declared for function "tBitMap"
+wl_draw.c 771 Warning 93: no reference to identifier "starty"
+wl_draw.c 771 Warning 93: no reference to identifier "endy"
+wl_draw.c 771 Warning 93: no reference to identifier "x"
+wl_draw.c 771 Warning 93: no reference to identifier "y"
+wl_draw.c 969 Warning 161: no prototype declared at definition for function "ThreeDRefresh"
+
+====================
+				clr=gfxbuf + (yoffset * 320) + x + xoffset[33;7m;[0m
+wl_draw.c 1069 Warning 225: pointer type mismatch
+                            "unsigned long *" does not match "unsigned char *"
+
+====================
+			deltah[(short)height], frach[(short)height],0[33;7m,[0m0,0);
+wl_draw.c 1079 Warning 87: argument count incorrect, expecting 5 arguments
+                           See line 1008 file "wl_draw.c"
+
+====================
+		y+deltah[(short)height], frach[(short)height],0[33;7m,[0m0,0);
+wl_draw.c 1092 Warning 87: argument count incorrect, expecting 5 arguments
+                           See line 1008 file "wl_draw.c"
+wl_draw.c 1056 Warning 93: no reference to identifier "endy"
+
+====================
+		[33;7my[0m = (height - viewheight) >>1;
+wl_draw.c 1112 Warning 36: control cannot reach this statement
+wl_draw.c 1098 Warning 93: no reference to identifier "frac"
+wl_draw.c 1098 Warning 93: no reference to identifier "delta"
+
+====================
+	spriteMinX[shapenum] = minX[33;7m;[0m
+wl_draw.c 1195 Warning 225: pointer type mismatch
+                            "unsigned char *" does not match "byte"
+
+====================
+	spriteMaxX[shapenum] = maxX[33;7m;[0m
+wl_draw.c 1196 Warning 225: pointer type mismatch
+                            "unsigned char *" does not match "byte"
+
+====================
+	spriteMinY[shapenum] = minY[33;7m;[0m
+wl_draw.c 1197 Warning 225: pointer type mismatch
+                            "unsigned char *" does not match "byte"
+
+====================
+	spriteMaxY[shapenum] = 20[33;7m;[0m//maxY;
+wl_draw.c 1198 Warning 225: pointer type mismatch
+                            "unsigned char *" does not match "int"
+wl_draw.c 1248 Warning 93: no reference to identifier "maxY"
+wl_draw.c 1248 Warning 93: no reference to identifier "temp"
+wl_draw.c 1349 Warning 161: no prototype declared at definition for function "CalcHeight"
+
+====================
+	source = wall+texture[33;7m;[0m
+wl_draw.c 1377 Warning 104: conversion from pointer to const/volatile to pointer to non-const/volatile
+wl_draw.c 1392 Warning 161: no prototype declared at definition for function "HitHorizDoor"
+wl_draw.c 1420 Warning 161: no prototype declared at definition for function "HitVertDoor"
+wl_draw.c 1449 Warning 161: no prototype declared at definition for function "HitVertWall"
+wl_draw.c 1477 Warning 161: no prototype declared at definition for function "HitHorizWall"
+
+====================
+  	  ScalePost(wall, texture,1[33;7m)[0m;
+wl_draw.c 1501 Warning 87: argument count incorrect, expecting 2 arguments
+                           See line 1370 file "wl_draw.c"
+wl_draw.c 1505 Warning 161: no prototype declared at definition for function "HitHorizPWall"
+wl_draw.c 1529 Warning 161: no prototype declared at definition for function "HitVertPWall"
+
+====================
+[33;7m{[0m
+wl_draw.c 1593 Warning 7: register parameters require a prototype
+                          Stack parameters used
+wl_draw.c 1863 Warning 183: inline function "FastFillScreen" declared but not defined
+                            See line 666 file "wl_draw.c"
+wl_draw.c 1863 Warning 183: inline function "ScaledDrawTrans" declared but not defined
+                            See line 1035 file "wl_draw.c"
+No errors; 48 warnings; 3 user suppressed warnings
+Global Optimizer for "wl_draw.c"
+wl_draw.c 498 Warning 316: Static function is unreachable "MapRow"
+wl_draw.c 529 Warning 316: Static function is unreachable "DrawSpans"
+wl_draw.c 569 Warning 316: Static function is unreachable "SetPlaneViewSize"
+wl_draw.c 609 Warning 316: Static function is unreachable "DrawPlanes"
+wl_draw.c 675 Warning 316: Static function is unreachable "ClearScreen"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "halfheight"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "tt1"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "tt2"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "framee"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "elapse"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "xx"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "x"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "y"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "col"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "Msg"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "spanstart"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "basedist"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "planepics"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "planeylookup"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "mirrorofs"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "mr_rowofs"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "mr_count"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "mr_xstep"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "mr_ystep"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "mr_xfrac"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "mr_yfrac"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "mr_dest"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "ebx"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "edx"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "esi"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "clrs"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "clr"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "h"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "w"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "ww"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "hh"
+wl_draw.c 1768 Warning 315: Static variable is unreachable "xoff"
+wl_draw.c 984 Note 306: local function inlined: "WallRefresh"
+wl_draw.c 984 Note 306: local function inlined: "AsmRefresh" from line 474
+wl_draw.c 984 Note 306: complexity=4 function inlined: "samey" from line 1666
+wl_draw.c 984 Note 306: local function inlined: "HitVertPWall" from line 1684
+wl_draw.c 984 Note 306: complexity=4 function inlined: "CalcHeight" from line 1543
+wl_draw.c 984 Note 306: local function inlined: "HitVertDoor" from line 1698
+wl_draw.c 984 Note 306: complexity=4 function inlined: "CalcHeight" from line 1427
+wl_draw.c 984 Note 306: local function inlined: "HitVertWall" from line 1702
+wl_draw.c 984 Note 306: complexity=4 function inlined: "CalcHeight" from line 1461
+wl_draw.c 984 Note 306: complexity=4 function inlined: "samex" from line 1715
+wl_draw.c 984 Note 306: local function inlined: "HitHorizPWall" from line 1733
+wl_draw.c 984 Note 306: complexity=4 function inlined: "CalcHeight" from line 1521
+wl_draw.c 984 Note 306: local function inlined: "HitHorizDoor" from line 1746
+wl_draw.c 984 Note 306: complexity=4 function inlined: "CalcHeight" from line 1398
+wl_draw.c 984 Note 306: local function inlined: "HitHorizWall" from line 1750
+wl_draw.c 984 Note 306: complexity=4 function inlined: "CalcHeight" from line 1489
+wl_draw.c 990 Note 306: local function inlined: "DrawScaleds"
+wl_draw.c 990 Note 306: complexity=9 function inlined: "TransformTile" from line 331
+wl_draw.c 990 Note 306: complexity=6 function inlined: "TransformActor" from line 370
+wl_draw.c 990 Note 306: complexity=8 function inlined: "CalcRotate" from line 380
+wl_draw.c 991 Note 306: local function inlined: "DrawPlayerWeapon"
+wl_draw.c 1220 Note 306: complexity=28 function inlined: "DeCompileSprite"
+wl_draw.c 1240 Note 306: complexity=13 function inlined: "ScaleLineTrans"
+wl_draw.c 1228 Warning 304: dead assignment eliminated "maxY"
+wl_draw.c 1255 Note 306: complexity=28 function inlined: "DeCompileSprite"
+wl_draw.c 1388 Note 306: local function inlined: "ScaleLine"
+wl_draw.c 1388 Note 306: complexity=5 function inlined: "ScaledDraw" from line 1079
+wl_draw.c 1388 Note 306: complexity=5 function inlined: "ScaledDraw" from line 1092
+Compiler Phase 2 for "wl_draw.c"
+Module size P=000020B8 D=00000000 U=00000000 C=00000000 F=0000014C UF=0000763A
+
+	sc  with temp_smk.tmp
+No default scoptions file found
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+slink WITH "AWolf3D.lnk"
+Slink - Version 6.58
+Copyright (c) 1988-1995 SAS Institute, Inc.  All Rights Reserved.
+
+[FPass1 for Object 'LIB:c.o'[K
+[FPass1 for Object 'ff_psp.o'[K
+[FPass1 for Object 'id_ca.o'[K
+[FPass1 for Object 'id_us.o'[K
+[FPass1 for Object 'id_vh.o'[K
+[FPass1 for Object 'misc.o'[K
+[FPass1 for Object 'objs.o'[K
+[FPass1 for Object 'sd_comm.o'[K
+[FPass1 for Object 'sd_null.o'[K
+[FPass1 for Object 'vi_comm.o'[K
+[FPass1 for Object 'vi_sdl.o'[K
+[FPass1 for Object 'wl_act1.o'[K
+[FPass1 for Object 'wl_act2.o'[K
+[FPass1 for Object 'wl_act3.o'[K
+[FPass1 for Object 'wl_agent.o'[K
+[FPass1 for Object 'wl_debug.o'[K
+[FPass1 for Object 'wl_draw.o'[K
+[FPass1 for Object 'wl_game.o'[K
+[FPass1 for Object 'wl_inter.o'[K
+[FPass1 for Object 'wl_main.o'[K
+[FPass1 for Object 'wl_menu.o'[K
+[FPass1 for Object 'wl_play.o'[K
+[FPass1 for Object 'wl_state.o'[K
+[FPass1 for Object 'wl_text.o'[K
+[FPass1 for Object 'fixed.o'[K
+[FPass1 for Object 'draw.o'[K
+[FPass1 for Object 'fastFill.o'[K
+[FPass1 for Library 'LIB:scmieee.lib'[K
+[FPass1 for Library 'LIB:scnb.lib'[K
+[FPass1 for Library 'LIB:amiga.lib'[K
+[FPass1 for Object 'T:VUZS.0001'[K
+[4mUndefined symbols       [0m [4mFirst Referenced[0m
+_strafe                  File 'wl_agent.o'
+Enter a DEFINE value for _strafe (default ___stub): [F
+Coalescing[K
+[FPass2 for Object 'LIB:c.o'[K
+[FPass2 for Object 'ff_psp.o'[K
+[FPass2 for Object 'id_ca.o'[K
+[FPass2 for Object 'id_us.o'[K
+[FPass2 for Object 'id_vh.o'[K
+[FPass2 for Object 'misc.o'[K
+[FPass2 for Object 'objs.o'[K
+[FPass2 for Object 'sd_comm.o'[K
+[FPass2 for Object 'sd_null.o'[K
+[FPass2 for Object 'vi_comm.o'[K
+[FPass2 for Object 'vi_sdl.o'[K
+[FPass2 for Object 'wl_act1.o'[K
+[FPass2 for Object 'wl_act2.o'[K
+[FPass2 for Object 'wl_act3.o'[K
+[FPass2 for Object 'wl_agent.o'[K
+[FPass2 for Object 'wl_debug.o'[K
+[FPass2 for Object 'wl_draw.o'[K
+[FPass2 for Object 'wl_game.o'[K
+[FPass2 for Object 'wl_inter.o'[K
+[FPass2 for Object 'wl_main.o'[K
+[FPass2 for Object 'wl_menu.o'[K
+[FPass2 for Object 'wl_play.o'[K
+[FPass2 for Object 'wl_state.o'[K
+[FPass2 for Object 'wl_text.o'[K
+[FPass2 for Object 'fixed.o'[K
+[FPass2 for Object 'draw.o'[K
+[FPass2 for Object 'fastFill.o'[K
+[FPass2 for Object 'T:VUZS.0001'[K
+[FPass2 for Library 'LIB:scmieee.lib'[K
+[FPass2 for Library 'LIB:scnb.lib'[K
+[FPass2 for Library 'LIB:amiga.lib'[K
+
+Parsing            0:00.00 ---   19754
+Pass1              0:11.56 --- 1396610
+Coalescing         0:00.00 --- 1101394
+Pass2              0:00.04 --- 1110234
+Map Processing     0:00.00 ---  190986
+======================================
+Total              0:11.60 --- 1396610
+
+SLINK Complete - Maximum code size = 275940 ($000435e4) bytes
+
+Final output file size = 195620 ($0002fc24) bytes

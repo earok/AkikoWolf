@@ -60,6 +60,7 @@ __extension__  \
 
 void ScaleShape(short xcenter, short shapenum, unsigned short height);
 void SimpleScaleShape(const short xcenter,const short shapenum,const unsigned short height);
+static void DeCompileSprite(short shapenum);
  
 /* ======================================================================== */
 
@@ -768,6 +769,7 @@ static  char Msg[3]={0,0,0};
 void VW_UpdateScreen2()
 {
 	int starty,endy,x,y;
+
 	if (vw!=viewheightwin)
     {
     	oldface--;
@@ -1194,6 +1196,11 @@ static void DeCompileSprite(short shapenum)
 	spriteMaxX[shapenum] = maxX;
 	spriteMinY[shapenum] = minY;
 	spriteMaxY[shapenum] = 20;//maxY;
+	
+	//Erik hack, free the page to stop sprites doubling up in memory?
+	PM_FreePage(PMSpriteStart + shapenum);
+	
+	
 }
 
 void ScaleShape(short xcenter, short shapenum, unsigned short height)
